@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+
+}
+
+.navbar-brand {
+    font-family: "Cabin Sketch", serif;
+    font-size: 2rem;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.navbar-brand:hover {
+    color: rgb(165, 114, 114);
+
+}
+
+.nav-link {
+    font-family: "Roboto", serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: rgb(227, 143, 143);
+}
+
+.search {
+    margin-right: -35px;
+    width: 80%;
+    height: 40px;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid rgb(281, 26, 92);
+}
+
+.btn0 {
+    height: 40px;
+    width: 40%;
+    outline: none;
+    background-color: rgb(281, 26, 92);
+    color: white;
+    border-radius: 60px;
+
+}
+.pro {
+  display: none;
+  margin-top: 20px;
+}
+
+.pro.show {
+  display: block;
+}
+
+.main {
+   
+    width: 100%;
+  
+
+
+}
+
+
+.main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.btn1 {
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: rgb(281, 26, 92);
+    font-weight: 700;
+    color: white;
+    border-radius: 60px;
+    text-transform: capitalize;
+}
+
+.btn1:hover {
+    transition: 0.5s;
+    background-color: rgb(255, 0, 64);
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: capitalize;
+}
+
+.figure
+{
+    transition: 1s;
+}
+.figure:hover
+{
+    transform: scale(1.2);
+}
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(.9); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+
+.product-card:hover .button-container {
+  opacity: 1; 
+}
+
+
+
+
+
+
+
+.vegtable {
+    background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(./image/b3.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.vegtable h1 {
+    font-family: "Cabin Sketch", serif;
+    text-transform: capitalize;
+
+}
+
+.btn2 {
+    height: 45px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-weight: 600;
+    margin-left: -10px;
+    border: 1px solid white;
+
+    text-transform: capitalize;
+}
+
+.news input {
+    height: 45px;
+    width: 55%;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+.news::placeholder {
+    color: white;
+
+}
+
+.news span {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.news span i:hover {
+    color: rgb(230, 56, 43);
+}
+
+#top {
+    color: rgb(230, 56, 43);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#top:hover {
+    font-size: 45px;
+}
+
+.confirmation-message {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* General body styling */
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Cart container styling */
+  #cartItems {
+    max-width: 75%;
+    margin: 20px auto;
+    background-color: #fff;
+   
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Product image styling */
+  .cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  /* Product info styling */
+  .cart-item > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item p {
+    margin: 0;
+  }
+  
+  .cart-item strong {
+    font-size: 16px;
+  }
+  
+  /* Quantity controls */
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  
+  .control-btn {
+    background-color:  #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .control-btn:hover {
+    background-color: #f44336;
+  }
+  
+  .quantity-control span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Remove button */
+  .remove ,#buyNow{
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .remove:hover , #buyNow:hover {
+    background-color: #e53935;
+  }
+  
+  
+  /* Total amount styling */
+  #totalAmount {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  
+  /* Responsive design for small screens */
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item > div {
+      margin-bottom: 10px;
+    }
+  
+    .quantity-control {
+      margin-bottom: 10px;
+    }
+  }
+  

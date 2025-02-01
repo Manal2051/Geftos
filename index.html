@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>food</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">giftos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#all">treding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact us">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick=" directToCarts(this)"><i class="fa fa-shopping-basket "></i> </a>
+                    </li>
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i id="selected-icon" class="fa-regular fa-sun" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <span id="dark-mode" class="dropdown-item"><i class="fa-regular fa-moon"></i>Dark
+                                </span>
+                            </li>
+                            <li>
+                                <span id="medium-mode" class="dropdown-item"><i
+                                        class="fa-solid fa-circle-half-stroke"></i>Auto</span>
+                            </li>
+                            <li>
+                                <span id="light-mode" class="dropdown-item"><i
+                                        class="fa-regular fa-sun"></i>Light</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="px-2 search" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- =========================================== -->
+    <section class="main">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-10 m-auto">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"  class=" bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"  class=" bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"  class=" bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"  class=" bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"  class=" bg-danger"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="6"  class=" bg-danger"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/image/airpods1.jpg" alt="AirPods" class="d-block" style="width:100% ; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">AirPods</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/bear11.jpg" alt="Bear" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">Bear</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/camera.jpg" alt="Camera" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">Camera</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/clothes1.jpg" alt="Clothes" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">Clothes</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/iphone16.jpg" alt="Daisies" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">iphone16</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/headphones3.jpg" alt="Flowers" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">Headphones</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/gift3.jpg" alt="E8 Image" class="d-block" style="width:100%; height: 600px;">
+                                <div class="carousel-caption">
+                                    <h3 style="color: brown; text-transform: capitalize">Men-Watch</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon bg-danger"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon bg-danger"></span>
+                        </button>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================================== -->
+    <section>
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-12">
+                    <div class="btn-block d-flex justify-content-between g-5">
+                        <div> <button  class="btn btn-danger w-100" onclick="showProducts('all')">Trending</button></div>
+                        <div> <button  class="btn btn-danger w-100" onclick="showProducts('flowers')">Flowers</button></div>
+                        <div> <button  class="btn btn-danger w-100" onclick="showProducts('electro')">Electro</button></div>
+                        <div> <button class="btn btn-danger w-100" onclick="showProducts('bears')">Bears</button></div>
+                        <div> <button class="btn btn-danger w-100" onclick="showProducts('Clothes')">Clothes</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- =================================================== -->
+
+    <section id="all" class="pro show ">
+        <div class="container py-5 ">
+            <div class="row m-0 py-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 style="text-transform: capitalize">what's trending</h1>
+                    <h6 style="color: brown; text-transform: capitalize">
+                        
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/airpods1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="AirPods">
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">AirPods</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/camera3.jpg" style="width: 100px; height: 100px;" alt="Wight-Camera" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Wight-Camera</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/camera.jpg" style="width: 100px; height: 100px;" alt="Black-Camera" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Black-Camera</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/e2.jpg" style="width: 120px; height: 100px;" alt="Smart Watch" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Smart Watch</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg text-center">
+                        <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                            <div class="card-body text-center">
+                                <img src="./image/clothes1.jpg" style="width: 120px; height: 100px;" alt="Los Angeles Hoodie" />
+                            </div>
+                            <h6 class="fw-bold text-dark mt-2">Los Angeles Hoodie</h6>
+                            <p class="text-danger fw-semibold">50$</p>
+                            <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                                <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                            <div class="card-body text-center">
+                                <img src="./image/flowers1.jpg" style="width: 120px; height: 100px;" alt="Red-flowers" />
+                            </div>
+                            <h6 class="fw-bold text-dark mt-2">Red-flowers</h6>
+                            <p class="text-danger fw-semibold">50$</p>
+                            <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                                <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                            <div class="card-body text-center">
+                                <img src="./image/clothes5.jpg" style="width: 120px; height: 100px;" alt="Cloud Blue Outfit" />
+                            </div>
+                            <h6 class="fw-bold text-dark mt-2">Cloud Blue Outfit</h6>
+                            <p class="text-danger fw-semibold">50$</p>
+                            <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                                <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                            <div class="card-body text-center">
+                                <img src="./image/bear11.jpg" style="width: 120px; height: 100px;" alt="Twin Bears" />
+                            </div>
+                            <h6 class="fw-bold text-dark mt-2">Twin Bears</h6>
+                            <p class="text-danger fw-semibold">50$</p>
+                            <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                                <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+                                <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                                <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+            <div class="row">
+                <div class="col-lg-5 text-center m-auto">
+                    <button class="btn1 m-3">click for more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== -->
+
+   
+
+    <section id="electro" class="pro">
+        <div class="container">
+            <div class="row text-center m-auto py-5">
+                <h1 style="text-transform: capitalize">Electro</h1>
+                <p style="color: brown; text-transform: capitalize">
+                    pick your product from our store
+                </p>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/e2.jpg" style="width: 120px; height: 100px;" alt="Smart Watch" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Smart Watch</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/airpods1.jpg" style="width: 120px; height: 100px;" alt="AirPods" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">AirPods</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/iphone16.jpg" style="width: 120px; height: 100px;" alt="iPhone 16" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">iPhone 16</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/camera5.jpg" style="width: 120px; height: 100px;" alt="Camera" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Camera</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+           
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/headphones5.jpg" style="width: 120px; height: 100px;" alt="Headphones" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Headphones</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/sumsung17.jpg" class="img-fluid rounded" style="width: 200px; height: 100px;" alt="SumSung">
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">SumSung</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/watch.jpg" class="img-fluid rounded" style="width: 120px; height: 100px;" alt="Men-Watch">
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Men-Watch</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/watchMen2.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Digital Watch">
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Digital Watch</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bears" class="pro">
+        <div class="container">
+            <div class="row text-center m-auto py-5">
+                <h1 style="text-transform: capitalize">Bears</h1>
+                <p style="color: brown; text-transform: capitalize">
+                    pick your product from our store
+                </p>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bear9.jpg" style="width: 120px; height: 100px;" alt="Blue and Pink Bear" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Blue and Pink Bear</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bear11.jpg" style="width: 120px; height: 100px;" alt="Twin Bears" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Twin Bears</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears10.jpg" style="width: 120px; height: 100px;" alt="Pink Heart Bear" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Pink Heart Bear</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears7.jpg" style="width: 120px; height: 100px;" alt="Cute Pink Bear" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Cute Pink Bear</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears8.jpg" style="width: 120px; height: 100px;" alt="White Bunny" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">White Bunny</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears1.jpg" style="width: 120px; height: 100px;" alt="White Bow Bear" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">White Bow Bear</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears6.jpg" style="width: 120px; height: 100px;" alt="Grey Bunny" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Grey Bunny</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/bears4.jpg" style="width: 120px; height: 100px;" alt="Baby Girl Bear" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Baby Girl Bear</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Clothes" class="pro">
+        <div class="container">
+            <div class="row text-center m-auto py-5">
+                <h1 style="text-transform: capitalize">Clothes</h1>
+                <p style="color: brown; text-transform: capitalize">
+                    pick your product from our store
+                </p>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes6.jpg" style="width: 120px; height: 100px;" alt="Summer Blue Set" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Summer Blue Set</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes7.jpg" style="width: 120px; height: 100px;" alt="Dream Girls Set" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Dream Girls Set</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes10.jpg" style="width: 120px; height: 100px;" alt="White and Beige Shoes" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">White and Beige Shoes</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes8.jpg" style="width: 120px; height: 100px;" alt="Blue and White Shirts Set" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Blue and White Shirts Set</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes4.jpg" style="width: 120px; height: 100px;" alt="Beige and Black Sweater" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Beige and Black Sweater</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes3.jpg" style="width: 120px; height: 100px;" alt="White Teddy Jacket" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">White Teddy Jacket</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes2.jpg" style="width: 120px; height: 100px;" alt="Beige Puffer Jacket" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Beige Puffer Jacket</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/clothes1.jpg" style="width: 120px; height: 100px;" alt="Los Angeles Hoodie" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Los Angeles Hoodie</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section  id="flowers" class="pro">
+        <div class="container">
+            <div class="row text-center m-auto py-5">
+                <h1 style="text-transform: capitalize">flowers</h1>
+                <p style="color: brown; text-transform: capitalize">
+                    pick your product from our store
+                </p>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/flower6.jpg" style="width: 120px; height: 100px;" alt="Lavender" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Lavender</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/flowers1.jpg" style="width: 120px; height: 100px;" alt="Red-flowers" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Red-flowers</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/flowers.jpg" style="width: 120px; height: 100px;" alt="Carnation" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Carnation</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/flower7.jpg" style="width: 120px; height: 100px;" alt="Zinnia" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Zinnia</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/flower5.jpg" style="width: 120px; height: 100px;" alt="Sunflowers" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Sunflowers</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/6.jpg" style="width: 120px; height: 100px;" alt="Peonies" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Peonies</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/0.jpg" style="width: 120px; height: 100px;" alt="Lilies" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Lilies</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg text-center">
+                    <div class="card product-card shadow-sm border-0 rounded-3 p-3 position-relative">
+                        <div class="card-body text-center">
+                            <img src="./image/Daisies.jpg" style="width: 120px; height: 100px;" alt="Daisies" />
+                        </div>
+                        <h6 class="fw-bold text-dark mt-2">Daisies</h6>
+                        <p class="text-danger fw-semibold">50$</p>
+                        <div class="button-container position-absolute top-50 end-0 translate-middle-y p-3 rounded-circle">
+                            <button onclick="addToCart(this)" class="btn btn-outline-danger btn-sm rounded-circle">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button onclick="redirectToDetails(this)" class="btn btn-outline-secondary btn-sm rounded-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button onclick="toggleFavorite(this)" class="btn btn-outline-warning btn-sm rounded-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================== -->
+   
+
+    <!-- ============================================================== -->
+
+    <section id="contact us" class="contact py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1>contact us</h1>
+                    <h6 style="color: brown; text-transform: capitalize">
+                        always be in touch with us
+                    </h6>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-lg-9 m-auto">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h6>location</h6>
+                            <p>new yourk first street</p>
+                            <h6>phone</h6>
+                            <p>012457-14578-324567</p>
+                            <h6>email</h6>
+                            <p>johan515@gmail.com</p>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Frist Name" class="form-control bg-light" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" placeholder="Email" class="form-control bg-light" />
+                                    </div>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control bg-light" placeholder="Enter your Description"
+                                            name="" id="" cols="10" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn1">submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+
+    <section class="news py-5 bg-black text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1>Join To Our Society</h1>
+                    <input type="email" class="px-3" placeholder="Enter Email" />
+                    <button  class="btn2">submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 m-auto">
+                    <div class="row mt-5 mb-3">
+                        <div class="col-lg-3">
+                            <h5>customer care</h5>
+                            <p>reqular</p>
+                            <p>on time</p>
+                            <p>always care</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>customer care</h5>
+                            <p>reqular</p>
+                            <p>on time</p>
+                            <p>always care</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>customer care</h5>
+                            <p>reqular</p>
+                            <p>on time</p>
+                            <p>always care</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>SOCIAL MEDIA</h5>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-brands fa-square-instagram"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="text-center">
+                    Copyright © 2024 organic. All rights reserved.
+                </p>
+            </div>
+            <span id="top"><i class="fa-solid fa-up-long"></i></span>
+        </div>
+    </section>
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
